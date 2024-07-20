@@ -1,10 +1,6 @@
 -- CreateExtension
 CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 
-UPDATE _prisma_migrations
-SET finished_at = NOW(), logs = NULL, applied_steps_count = 1 
-WHERE migration_name = '05_add_visit_id';
-
 -- CreateTable
 CREATE TABLE "user" (
     "user_id" UUID NOT NULL,
